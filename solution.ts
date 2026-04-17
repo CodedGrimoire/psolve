@@ -154,53 +154,112 @@ function countVowels(s: string): number
 }
 
 
-function factorial(n: number): number {
-  let result = 1;
+function factorial(n: number): number 
 
-  for (let i = 1; i <= n; i++) {
-    result *= i;
+
+{
+  let fact = 1;
+
+  for (let i = 1; i <= n; i++)
+    
+    
+    {
+    fact = i*fact;
   }
 
-  return result;
+
+  return fact;
 }
 
-function getEvenNumbers(nums: number[]): number[] {
+
+
+
+function getEvenNumbers(nums: number[]): number[] 
+
+
+
+{
   const evens: number[] = [];
 
-  for (const num of nums) {
-    if (num % 2 === 0) {
+  for (const num of nums) 
+    
+    
+    
+    {
+    if (num % 2 === 0) 
+      
+      
+      
+      {
       evens.push(num);
     }
   }
 
+
   return evens;
 }
 
-function fibonacci(n: number): number[] {
-  const result: number[] = [];
 
-  if (n >= 1) {
+
+
+function fibonacci(n: number): number[] 
+
+
+{
+  const result: number[] = [];
+let i;
+  if (n >= 1) 
+    
+    
+    {
     result.push(0);
   }
-  if (n >= 2) {
+  if (n >= 2) 
+    
+    
+    {
     result.push(1);
   }
 
-  for (let i = 2; i < n; i++) {
+  for (i = 2; i < n; i++) 
+    
+    
+    {
+
+
     result.push(result[i - 1] + result[i - 2]);
   }
+
+
 
   return result;
 }
 
-function findMinimum(nums: number[]): number {
+
+
+
+function findMinimum(nums: number[]): number 
+
+
+
+{
+  let i;
   let minimum = nums[0];
 
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] < minimum) {
+  for (i = 1; i < nums.length; i++) 
+    
+    
+    {
+    if (nums[i] < minimum) 
+      
+      
+      
+      {
       minimum = nums[i];
     }
   }
+
+  
 
   return minimum;
 }
