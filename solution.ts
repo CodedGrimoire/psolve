@@ -1,31 +1,60 @@
 
-function reverseString(s: string): string {
-  let reversed = "";
+function reverseString(s: string): string 
 
-  for (let i = s.length - 1; i >= 0; i--) {
-    reversed += s[i];
+{
+  let rev = "";
+  let i;
+  let length=s.length;
+
+  for (i = length - 1; i >= 0; i--)
+    
+    
+    {
+    rev += s[i];
   }
 
-  return reversed;
+  return rev;
 }
 
-function fizzBuzz(n: number): string[] {
+function fizzBuzz(n: number): string[] 
+
+
+{
+  let i;
   const result: string[] = [];
 
-  for (let i = 1; i <= n; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
+  for (i = 1; i <= n; i++) 
+    
+    
+    {
+    if (i % 3 === 0 && i % 5 === 0)
+      
+      {
       result.push("FizzBuzz");
-    } else if (i % 3 === 0) {
+    } 
+    
+    else if (i % 3 === 0) 
+      
+      {
       result.push("Fizz");
-    } else if (i % 5 === 0) {
+    } else if (i % 5 === 0) 
+      
+      {
       result.push("Buzz");
-    } else {
+    } 
+    
+    else 
+      
+      
+      {
       result.push(i.toString());
     }
   }
 
   return result;
 }
+
+
 
 function findLargest(nums: number[]): number {
   let largest = nums[0];
