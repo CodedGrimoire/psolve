@@ -56,25 +56,49 @@ function fizzBuzz(n: number): string[]
 
 
 
-function findLargest(nums: number[]): number {
-  let largest = nums[0];
+function findLargest(nums: number[]): number
 
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] > largest) {
-      largest = nums[i];
+{
+  let max = nums[0];
+
+  let i;
+
+  for (i = 1; i < nums.length; i++) 
+    
+    
+    {
+    if (nums[i] > max)
+      
+      
+      {
+      max = nums[i];
     }
   }
 
-  return largest;
+  return max;
 }
 
-function isPalindrome(s: string): boolean {
-  const lower = s.toLowerCase();
-  let left = 0;
-  let right = lower.length - 1;
 
-  while (left < right) {
-    if (lower[left] !== lower[right]) {
+
+
+function isPalindrome(s: string): boolean
+
+
+
+{
+  const lower = s.toLowerCase();
+
+  let right = lower.length - 1;
+  let left = 0;
+  
+
+  while (left < right)
+    
+    {
+    if (lower[left] !== lower[right]) 
+      
+      
+      {
       return false;
     }
     left++;
@@ -84,23 +108,44 @@ function isPalindrome(s: string): boolean {
   return true;
 }
 
-function sumArray(nums: number[]): number {
+
+
+
+function sumArray(nums: number[]): number 
+
+
+{
   let sum = 0;
 
-  for (const num of nums) {
-    sum += num;
+  for (const num of nums)
+    
+    
+    {
+    sum = num+sum;
   }
 
   return sum;
 }
 
 
-function countVowels(s: string): number {
+function countVowels(s: string): number 
+
+
+
+{
   let count = 0;
+
   const vowels = "aeiouAEIOU";
 
-  for (const ch of s) {
-    if (vowels.includes(ch)) {
+  for (const cha of s) 
+    
+    
+    
+    {
+    if (vowels.includes(cha))
+      
+      
+      {
       count++;
     }
   }
