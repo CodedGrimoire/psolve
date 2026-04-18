@@ -37,7 +37,8 @@ function fizzBuzz(n: number): string[]
       
       {
       result.push("Fizz");
-    } else if (i % 5 === 0) 
+    } 
+    else if (i % 5 === 0) 
       
       {
       result.push("Buzz");
